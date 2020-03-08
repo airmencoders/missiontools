@@ -5,7 +5,7 @@ export default class Header extends React.Component {
 
     constructor(props) {
         super(props)
-        navigation = props.navigation;
+        this.navigation = props.navigation;
       }
   _goBack = () => console.log('Went back');
 
@@ -19,12 +19,11 @@ export default class Header extends React.Component {
         {/* <Appbar.BackAction
           onPress={this._goBack}
         /> */}
-        <Appbar.Action icon="menu" onPress={() => navigation.openDrawer()} />
+        <Appbar.Action icon="menu" onPress={() => this.navigation.openDrawer()} />
         <Appbar.Content
-          title="Title"
-          subtitle="Subtitle"
+          title="KCHS"
+          subtitle="Charleston Air Force Base/Intl"
         />
-        <Appbar.Action icon="camera" onPress={() => navigation.openDrawer()} />
         <Appbar.Action icon="share" onPress={this._handleMore} />
       </Appbar.Header>
     );

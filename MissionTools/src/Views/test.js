@@ -3,12 +3,14 @@ import { Headline } from 'react-native-paper';
 import { StyleSheet, SafeAreaView,} from 'react-native';
 import { withNavigation } from 'react-navigation';
 import Header from '../Components/Header'
+import TripBasics from '../Components/TripBasics'
 
 
 
 class Test extends Component {
     static navigationOptions = {
         drawerLabel: 'Notifications',
+    
         
       };
   constructor(props) {
@@ -37,7 +39,7 @@ class Test extends Component {
       <SafeAreaView style={styles.container}>
           
 
-      <Headline>Headline</Headline>
+    <TripBasics />
     
     </SafeAreaView>
           
